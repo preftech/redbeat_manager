@@ -52,7 +52,7 @@ redbeat-react/build
 ## Config
 
 Right now, only REDIS_URL is required
-``bash
+```bash
 export REDIS_URL=redis://localhost/
 flask run
 ```
