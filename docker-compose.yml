@@ -12,6 +12,15 @@ services:
     volumes:
       - 'redis_data:/bitnami/redis/data'
 
+  redbeat-manager: 
+    image: 'redbeat-manager'
+    environment: 
+      - REDIS_URL=redis://redis/
+    links:
+      - "redis"
+    ports: 
+      - '5000:5000'
+
 volumes:
   redis_data:
     driver: local

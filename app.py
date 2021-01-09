@@ -13,6 +13,7 @@ CORS(app)
 
 CELERY_APP = os.getenv("CELERY_APP", "POC")
 REDIS_URL = os.getenv("REDIS_URL", "redis://localhost/")
+print ("Using redis at {}".format(REDIS_URL))
 celery = Celery(CELERY_APP, broker=REDIS_URL)
 
 @app.route('/', defaults={'file' :'index.html'})
@@ -23,6 +24,8 @@ def index(file) :
 
 @app.route('/schedules')
 def retrieve():
+    print ("Using redis at {}".format(REDIS_URL))
+    celery = Celery(CELERY_APP, broker=REDIS_URL)
     entries = get_schedules(celery)
     result_list = []
     for d in entries : 

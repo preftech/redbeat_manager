@@ -1,0 +1,5 @@
+.env/**
+.git/**
+__pycache__/**
+**/build
+**/node_modules
