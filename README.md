@@ -2,7 +2,10 @@
 
 A basic project to provide an interface for viewing and managing celery tasks scheduled
 through redbeat.
-
+- [Redbeat Schedule Manager](#redbeat-schedule-manager)
+- [Development](#development)
+  - [Install python dependencies](#install-python-dependencies)
+  - [Config](#config)
 
 # Development
 Built with Flask & Yarn
@@ -44,3 +47,12 @@ yarn build
 Compiles typescript and outputs to redbeat-react/build
 app.py is set to server static data from 
 redbeat-react/build
+
+
+## Config
+
+Right now, only REDIS_URL is required
+``bash
+export REDIS_URL=redis://localhost/
+flask run
+```
