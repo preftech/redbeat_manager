@@ -38,7 +38,7 @@ pickleshare==0.7.5
 prometheus-client==0.8.0
 prompt-toolkit==3.0.8
 ptyprocess==0.7.0
-Pygments==2.7.3
+Pygments==2.7.4
 pymongo==3.11.2
 python-dateutil==2.8.1
 python-jsonrpc-server==0.3.4
