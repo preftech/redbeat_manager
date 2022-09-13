@@ -19,7 +19,7 @@ docutils==0.16
 fett==0.3.2
 Flask==1.1.2
 Flask-Cors==3.0.9
-flower==0.9.7
+flower==1.2.0
 greenlet==0.4.17
 humanize==3.2.0
 idna==2.10
